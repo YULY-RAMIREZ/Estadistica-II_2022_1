@@ -21,8 +21,7 @@ x-y
 x*y
 x/y
 x^2
-x%/%y
-x%%y
+
 
 #### operadores relacionales
 x <- 5
