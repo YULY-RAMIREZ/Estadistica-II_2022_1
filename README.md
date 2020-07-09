@@ -1,7 +1,7 @@
-# Estadística II_2020-1_Grupo H1
+# Estadística II_2020-1_Grupo H1 - UIS
 
 
-## 1. Elementos básicos_R [eslabón] 
+## 1. Elementos básicos_R 
 
 En este script encontrará algunos elementos básicos que se manejan en R
 
