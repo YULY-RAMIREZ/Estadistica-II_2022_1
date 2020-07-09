@@ -1,7 +1,7 @@
 # Estadística II_2020-1_Grupo H1
 
 
-## 1. Elementos básicos_R [link] 
+## 1. Elementos básicos_R [eslabón] 
 
 En este script encontrará algunos elementos básicos que se manejan en R
 
