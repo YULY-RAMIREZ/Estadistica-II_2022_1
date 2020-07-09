@@ -3,4 +3,13 @@
 
 ## 1. Elementos básicos de R
 
+En este script encontrará algunos elementos básicos que se manejan en R
+
 ## 2. Estudiar R con swirl()
+
+En este script encontrará cómo estudiar R con el paquete swirl
+
+## 3. Intervalos de confianza
+
+En este script encontrará una simulación relacionada con intervalos de confianza para estimar la media poblacional.
+
