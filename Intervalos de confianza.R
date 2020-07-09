@@ -1,18 +1,18 @@
 
 ## Intervalo de confianza para una muestra
 
-# Par醡etros poblacionales
+# Par谩metros poblacionales
 Media <- 100
-Desviaci髇 <- 20
+Desviaci贸n <- 20
 
-curve(dnorm(x, mean = Media, sd = Desviaci髇), xlim = c(10, 200))
+curve(dnorm(x, mean = Media, sd = Desviaci贸n), xlim = c(10, 200))
 
 
-## Obtener una muestra de tama駉 10
+## Obtener una muestra de tama帽o 10
 
-n <- 30 #tama駉 de la muestra
+n <- 30 #tama帽o de la muestra
 
-muestra_1 <- rnorm(n, mean = Media, sd = Desviaci髇)
+muestra_1 <- rnorm(n, mean = Media, sd = Desviaci贸n)
 
 mean(muestra_1)
 sd(muestra_1)
@@ -25,8 +25,8 @@ sd(muestra_1)
 
 P_Z <- round(qnorm(1-0.05/2),2)
 
-# Error est醤dar de la media
-Desv.media <- Desviaci髇/sqrt(n)
+# Error est谩ndar de la media
+Desv.media <- Desviaci贸n/sqrt(n)
 
 # Hallar el LIC y LSC
 
@@ -39,7 +39,7 @@ Intervalo <- as.matrix(c(round(LIC,2), round(LSC,2)))
 class(Intervalo)
 
 
-#Construir gr醘ica 
+#Construir gr谩fica 
 
 plot(1:100, type = "n",
     xlim = range(50, 120),
@@ -55,19 +55,19 @@ segments(Intervalo[1,1],1, Intervalo[2,1], 1)
 set.seed(500)
 
 Media <- 150
-Desviaci髇 <- 10
+Desviaci贸n <- 10
 cantidad_muestras <- 100
-n <- 30 # Tama駉 de la muestra
+n <- 30 # Tama帽o de la muestra
 
-muestras <- replicate(cantidad_muestras,rnorm(n, mean = Media, sd = Desviaci髇))
+muestras <- replicate(cantidad_muestras,rnorm(n, mean = Media, sd = Desviaci贸n))
 
 
 
-Calcular_Intervalos <- function(columna,Desviaci髇,n,sig){
+Calcular_Intervalos <- function(columna,Desviaci贸n,n,sig){
    
    muestra <- muestras[,columna]
    P_Z <- qnorm(1-sig/2)
-   Desv.media <- Desviaci髇/sqrt(n)
+   Desv.media <- Desviaci贸n/sqrt(n)
    
    # Hallar el LIC y LSC
    
@@ -85,10 +85,10 @@ Calcular_Intervalos <- function(columna,Desviaci髇,n,sig){
 listado_intervalos <- matrix(rep(0,200), nrow = 2)
 
 for (i in 1:100) {
- listado_intervalos[,i] <-  Calcular_Intervalos(i,Desviaci髇 = Desviaci髇,n = n,sig = 0.05)
+ listado_intervalos[,i] <-  Calcular_Intervalos(i,Desviaci贸n = Desviaci贸n,n = n,sig = 0.05)
 }
 
-#Construir grafica 
+#Construir gr谩fica 
 
 plot(1:100, type = "n",
      xlim = range(130, 170),
@@ -103,7 +103,7 @@ for (i in 1:cantidad_muestras) {
     segments(listado_intervalos[1,i],i, listado_intervalos[2,i],i, col = color )
 }
 
-# Inspeccionar los intervalos que no contienen el par醡etro poblacional
+# Inspeccionar los intervalos que no contienen el par谩metro poblacional
 
 
 Transponer_lista <- as.data.frame(t(listado_intervalos))
