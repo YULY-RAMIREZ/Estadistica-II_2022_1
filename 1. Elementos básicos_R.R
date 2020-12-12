@@ -56,10 +56,6 @@ x[-1]
 x[c(2,4)]    # No es posible mezclar enteros negativos con positivos
 x[c(2.4, 3.54)] 
 
-x[c(TRUE, FALSE, FALSE, TRUE)]
-x[x < 0] 
-x[x > 0] 
-
 x <- c("first"=3, "second"=0, "third"=9)
 names(x)
 x["second"]
@@ -110,7 +106,6 @@ x[,]
 
 x[1,]  
 class(x[1,]  )
-x[1,,drop=FALSE]
 
 x[x>5]   
 
@@ -157,7 +152,7 @@ datos[2:3,]
 
 ####¿Cómo se seleccionarán las filas 10 a 12 y la columna 2?
 
-####datos[10:12, 2, drop = F]
+####datos[10:12, 2]
 ?rnorm
 
 
