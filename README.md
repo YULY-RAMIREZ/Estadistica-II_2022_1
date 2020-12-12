@@ -1,4 +1,4 @@
-# Estadística II_2020-1_Grupo H1 - UIS
+# Estadística II_2020-2_Grupo H1 - UIS
 
 
 ## 1. Elementos básicos_R 
