@@ -32,15 +32,6 @@ y>=20
 y == 16
 x != 5
 
-##### Operadores lógicos
-x <- c(TRUE,FALSE,0,6)
-y <- c(FALSE,TRUE,FALSE,TRUE)
-!x
-x&y
-x|y
-
-
-
 ##### Vectores
 x <- c(1, 5, 4, 9, 0)
 typeof(x)            ####los vectores numéricos son de tipo enteros. decimales o complejos
