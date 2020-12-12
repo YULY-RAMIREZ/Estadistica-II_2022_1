@@ -37,9 +37,8 @@ x <- c(TRUE,FALSE,0,6)
 y <- c(FALSE,TRUE,FALSE,TRUE)
 !x
 x&y
-x&&y
 x|y
-x||y
+
 
 
 ##### Vectores
@@ -123,7 +122,6 @@ class(x[1,]  )
 x[1,,drop=FALSE]
 
 x[x>5]   
-x[x%%2 == 0]
 
 ##Modificar matrix
 
